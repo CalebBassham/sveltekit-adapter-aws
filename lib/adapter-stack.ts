@@ -20,7 +20,7 @@ import { HttpLambdaIntegration } from '@aws-cdk/aws-apigatewayv2-integrations-al
 import { config } from 'dotenv';
 
 export interface AWSAdapterStackProps extends StackProps {
-  FQDN: string;
+  FQDN?: string;
   account?: string;
   region?: string;
 }
